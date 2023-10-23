@@ -1,6 +1,4 @@
-print('HelloWorld')
-print('Тест ниже')
-
-name = "Text_name"
-print("Name if right of this point " + name)
-
+human = True
+print(human)
+print(type(human))
+print("Are you a human? " + str(human))
