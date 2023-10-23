@@ -1,6 +1,4 @@
-print('HelloWorld')
-print('Тест ниже')
-
-name = "Text_name"
-print("Name if right of this point " + name)
-
+height = 1.73
+print(height)
+print(type(height))
+print("Your height is "+str(height))
