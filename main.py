@@ -1,2 +1,11 @@
-print('Here is main branch, DNT')
-# master update
+name = "Test_name" # 9 symbols
+#print(len(name))
+#print(name.find("e"))
+#print(name.capitalize())
+#print(name.upper())
+#print(name.lower())
+#print(name.isdigit())
+#print(name.isalpha())
+#print(name.count("e"))
+#print(name.replace("T","tetet"))
+print(name*3)
