@@ -12,6 +12,8 @@
 # print(x)
 # print(multiply(2,4))
 
-def hello(f,s,l):
-    print("Hello "+f + s + l)
-print(hello(l="Last_name ",f="First_name ",s="Second_name "))
+# def hello(f,s,l):
+#     print("Hello "+f + s + l)
+# print(hello(l="Last_name ",f="First_name ",s="Second_name "))
+
+print(round(abs(float(input("Введите число: "))))) # тоже самое, что каждую по отдельности
