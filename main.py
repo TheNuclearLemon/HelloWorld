@@ -1,12 +1,9 @@
+import shutil
+#copyfile() - копирует содержимое файла
+#copy() - copyfile() + пермишен мод + конечная точка может быть папкой
+#copy2() - copy() + метадата (информация о создании файла, данные об изменении и т.п.)
 import os
 
-path = "C:\\Users\\Killcan\\Desktop\\Text.txt"
-
-if os.path.exists(path):
-    print("That location exists")
-    if os.path.isfile(path):    # проверка файл ли
-        print("That is a file")
-    elif os.path.isdir(path):   # проверка папка ли
-        print("That is a directory")
-else:
-    print("That location doesn't exist")
+shutil.copy("Text.txt","C:\\Users\\Killcan\\Desktop\\Copy.txt")
+#src,dst - аргументы, src - source (что), dst - destination (куда)
+#если dst заполнить именем, но файл будет помещен в проект / если задать имя файла - будет переименован
