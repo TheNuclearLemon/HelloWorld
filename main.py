@@ -1,12 +1,17 @@
 import os
+import shutil
 
-path = "C:\\Users\\Killcan\\Desktop\\Text.txt"
-
-if os.path.exists(path):
-    print("That location exists")
-    if os.path.isfile(path):    # проверка файл ли
-        print("That is a file")
-    elif os.path.isdir(path):   # проверка папка ли
-        print("That is a directory")
+path="empty_folder"
+try:
+    os.remove(path) # для удаления файлов
+except FileNotFoundError:
+    print("File not found")
+except PermissionError:
+    print("You don't have permission to delete dir")
 else:
-    print("That location doesn't exist")
+    print(path+" was deleted")
+
+# для удаления ПУСТОЙ папки используется os.rmdir(path)
+os.rmdir("empty_folder")
+# для удаления папки с ФАЙЛАМИ используется shutil.rmtree(path)
+shutil.rmtree("folder")
