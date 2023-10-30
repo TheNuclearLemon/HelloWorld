@@ -1,0 +1,6 @@
+There is some text
+Some text again
+ 
+Above is no text but space
+
+Abote is no text and no space
