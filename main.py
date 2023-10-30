@@ -1,12 +1,4 @@
-import os
-
-path = "C:\\Users\\Killcan\\Desktop\\Text.txt"
-
-if os.path.exists(path):
-    print("That location exists")
-    if os.path.isfile(path):    # проверка файл ли
-        print("That is a file")
-    elif os.path.isdir(path):   # проверка папка ли
-        print("That is a directory")
-else:
-    print("That location doesn't exist")
+#text="Yooooooooooo\nThis is some text\n\nThere is free space above"
+text="\nA new string in the file"
+with open("Text.txt","a") as file: # w - write mode, позволяет редактировать файл / a - append, добавляет информацию в файл / as file - as переменная, может быть любое значение
+    file.write(text)

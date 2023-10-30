@@ -1,6 +1,5 @@
-There is some text
-Some text again
- 
-Above is no text but space
+Yooooooooooo
+This is some text
 
-Abote is no text and no space
+There is free space aboveA new string in the file
+A new string in the file
