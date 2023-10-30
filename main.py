@@ -1,40 +1,26 @@
-print('Here is main branch, DNT')
-# master update
+try:
+    num1=int(input("Первое число: "))
+    num2=int(input("Второе число: "))
+    result=num1/num2
+    print(result)
 
-# Закрепление знаний
-kol_uch=int(input("Введите кол-во учеников: ")) # получаем количество учеников
+# except ZeroDivisionError: # срабатывает при прерывании только с этой ошибкой
+#     print("Деление на 0")
+# except ValueError:
+#     print("Некорректное значение")
+# except Exception: # позволяет вывести информацию не прерывая выполнение программы; Exception - включает в себя все прерывания
+#     print("Something went wrong")
 
-spisok = {} # создаем словарь для переменных
-for x in range(0, kol_uch): # заполняем словарь данными
-    spisok["Student info" + str(x)]=[str(input("Введите имя: ")),int(input(("Введите возраст: "))),str(input("Введите пол: "))]
-for y in spisok.keys(): # превращаем словарь в список, создавая лист с данными
-    Students_info=list(spisok.values())
-
-
-# ch1=str(input("Укажите имя первого ученика: "))
-# ch2=str(input("Укажите имя второго ученика: "))
-# parametr=input("Укажите параметр для сравнения: ")
-# if parametr == "Имя":
-#     if ch1==ch2:
-#         print("Имя одинаковое")
-#     else:
-#         print ("Имя разное")
-# elif parametr == "Возраст":
-#
-
-
-# elif parametr == "Возраст":
-#     for q in Students_info:
-#         for w in range(0,3):
-#             if ch1 == ch2:
-#                 print("Одинаковое имя")
-#             else:
-#                 print("Имена разные")
-
-
-
-
-
-
-# print(spisok)
-# print(Students_info[0])
+except ZeroDivisionError as e: # as e - выводит текст ошибки
+    print(e)
+    print("Деление на 0")
+except ValueError as e: # invalid literal for int() with base 10: 's'
+    print(e)
+    print("Некорректное значение")
+except Exception as e:
+    print(e)
+    print("Something went wrong")
+else:                   # срабатывает, если не произошли прерывания
+    print("All good")
+finally:                # срабатывает всегда в конце вне зависимости от того, были ли прерывания
+    print("This will always execute")
